@@ -1,0 +1,338 @@
+
+body{
+
+    font-family: 'Cairo', sans-serif;
+   font-family: 'Oswald', sans-serif;
+   margin: 0;
+   padding: 0;
+   
+}
+
+p{
+    font-size: 20px;
+}
+
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista{
+    display: flex;
+    
+}
+
+.titular{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+a{
+    font-size: 14px;
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    color: white;
+    text-decoration: none;
+
+}
+
+header{
+    background: url(/img/f1.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+
+}
+/**-*************************** COMIENZA LA PARTE SECCION ******************************/
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+.contenedor-mi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.segundo-contenedor{
+    width: 42%;
+    
+}
+
+.segundo-contenedor p {
+    font-size: 18px;
+}
+
+.segundo-contenedor a{
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+.contenedor-servicios{
+    display:flex;
+    flex-wrap: wrap;
+  justify-content:space-around;
+    color: white; 
+}
+
+.servicio{
+    width: 25%;
+    padding: 38px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.violeta{
+    background: #5055df;
+}
+
+.celeste{
+    background: #40a8fa;
+   
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio img{
+    float: right;
+}
+
+.servicio p{
+    font-size: 18px;
+    height: 200px;  /*PARA QUE EL O ICONO NO SE MUEVA*/
+}
+
+.owl-nav{
+    text-align: center;
+    
+}
+span{
+    font-size: 60px;
+    color: #5cb8ff;
+}
+
+.porque{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.porque h4{
+    margin: 0;
+    font-size: 20px;
+
+}
+
+.porque p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.edu{
+    width: 40%;
+    padding: 28px;
+}
+
+
+/**********************COMIENZA LA PARTE DEL BLOG *****************************/
+.contenedor-blog{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-individual{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    padding-bottom: 20px;
+}
+
+#fondo{
+    background: #f9fafc;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+#fondo img{
+    width: 100%;
+}
+
+#fondo h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;   
+}
+
+#fondo p{
+    color: #5a6169;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+
+#fondo a{
+    display: inline-block;
+    margin-left:20px;
+}
+.segunda img{
+    height: 267.52px ;
+    
+    }
+  
+#que-esperas{
+    background: linear-gradient(rgb(84,93,220,.94),rgb(96,171,245,.9));
+    text-align: center;
+    padding: 50px 0 50px 0 ;
+}    
+
+#que-esperas h3{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#que-esperas a{
+    padding: 15px 45px 15px 45px;
+    transition: 1s;
+}
+
+#que-esperas a:hover{
+    color:black;
+    transition: 1s;
+}
+
+
+#whassap a{
+    background: none;
+    position: fixed;
+    top:85%;
+    right: 1%;
+    z-index: 1;
+    
+ 
+}
+
+.menu-icon {
+    display: none;
+
+
+}
+
+
+
+
+
+
+@media (max-width: 800px){
+
+  
+    nav{
+        position: absolute;
+        top:70px;
+        left: 0px;
+        background: #4cb8ff;
+        width: 100%;
+       display: none;
+    }
+    nav .lista{
+      flex-direction: column;
+      display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 25px;
+    }
+
+    .titular{
+        margin-top: 54px;
+    }
+    h1{
+        font-size: 49px;
+    }
+    
+    .contenedor-mi{
+        flex-direction: column;
+    }
+    
+    .segundo-contenedor{
+        width: 90%;
+    }
+    
+    
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+    
+    .servicio{
+        width: 72%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    h3{
+        font-size: 46px;
+    }
+    
+    .porque{
+        flex-direction: column;
+    }
+    
+    .edu{
+        width: 85%;
+    
+    }
+    
+    .contenedor-blog{
+        flex-direction: column;
+    }
+    
+    .contenedor-individual{
+      width: 85%;
+      margin:auto;
+      margin-bottom: 25px;
+    }
+
+  
+}
+
+@media(min-width:700px) and (max-width:900px){
+    header{
+        height: 53vh;
+    }
+}
+
+
+
+

@@ -1,0 +1,55 @@
+.nav-lineal{
+    display: inline-block;
+    background: chocolate;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav{
+    background-color: blueviolet;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav-lineal:hover{
+    background-color: cadetblue;
+}
+
+
+.nav-boton{
+    background-color: salmon;
+    color: white;
+    padding: 10px 0;
+    border: 2px solid;
+    display: none;
+}
+
+
+@media (max-width:600px) {
+    nav{
+        background-color: black;
+      flex-direction: column;
+    }
+    .nav-lineal{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+
+    .desaparece{
+        display: none;
+
+    }
+    
+}
+
+
+
+
+
+

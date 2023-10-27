@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-padre{
+    background-color: gray;
+    width: 600px;
+    height: 700px;
+
+   /* margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;*/
+    
+}
+
+.primer-contenedor{
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top:150px ;
+    left: 45px;
+    z-index: 2;
+
+}
+
+.segundo-contenedor{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 10px;
+    left: 150px;
+    z-index: 1;
+
+}
+
+.tercer-contenedor{
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -40px;
+    left: 65px;
+    z-index: 3;
+
+}
+
+nav{
+    background-color: teal;
+    position: sticky;
+    top: 0px;
+    
+ 
+
+}
+
+
+

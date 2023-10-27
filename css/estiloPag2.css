@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*
+nav{
+    background: aqua;
+    padding: 25px;
+}
+
+
+.padre{
+    display: flex;
+    text-align: center;
+    left: 75px;
+    position: relative;  /*HACE QUE SEP PUEDA MOVER EN EL DOCUMENTO/*
+    
+  
+}
+
+.columna{
+   color: white;
+   background: palevioletred;
+   padding: 20px;
+   width: 25%;
+   margin: 10px;
+  
+}
+
+
+button{
+    background: #404969;
+    color: #bd34f4;
+}
+
+button:hover{
+    background: #ff7f50;
+}
+
+
+button:active{
+    background: blue;
+}
+
+*/
+
+
+/****************************************SEGUNDA PARTE*******************************************/
+
+
+
+nav{
+    background: green;
+    padding:20px;
+    display: flex; /***SE OCUPA PARA PODER MANIPULAR LAS CAJAS*******/
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 10px 10px 0px 10px;
+}
+
+
+.nav-enlace:hover{
+    background: rosybrown;
+
+}
+
+
+.nav-enlace{
+   
+    color: white;
+    background: black;/*SFFS*/
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.nav-boton{
+    background: salmon;
+    color: white;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+
+
+@media(max-width:600px){
+    nav{
+        flex-direction: column;
+        background: black; 
+    }
+
+    .nav-enlace{
+        background: crimson;
+        margin: 10px 0px 0px 0px; 
+    }
+
+    .nav-enlace:hover{
+        background:#7B68EE;
+    }
+
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+
+}
+
+/**************************TERCERA PARTE COLUMNAS**********************/
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 10px;
+    
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+h2{
+    font-weight: 500;
+
+}
+
+p{
+    font-weight: 300;
+}
+
+.precio{
+    font-size: 40px;
+    color: #00dac7;
+    margin: 0;
+}
+
+.columna{
+    background: rgb(238,238,238);
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;/*espacio entre las cajas*/
+    padding: 10px;/*espacio entre la caja y el texto*/
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888; /*AGREGAR SOMBRA EN EL SENTIDO DE LAS X*/
+    width: 21%;
+    box-sizing: border-box;/*calcula  incluyendo el margin y el paddin ya incluido*/
+   
+}
+
+.btn-precio{
+    background: salmon;
+    color: white;
+    display: block;/* CONVERTIR ELEMENTO INLINE A BLOCK Y OPCUPE EL 100% */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;/*HACE QUE TENGA UN ESPACIO HACIA ABAJO EL BOTON DE LA PARTE DE ABAJO*/
+}
+
+
+.btn-precio:hover{
+    background: skyblue;
+}
+
+
+
+@media(max-width:1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 15px;
+        
+    }
+
+}
+
+@media(max-width:600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 15px;
+        
+    }
+
+}
