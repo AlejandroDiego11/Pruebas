@@ -13,11 +13,10 @@
     /*position: relative;*/
      margin: 50px auto;
      display:flex;
-     flex-direction: column;
-
-  
-    
-    
+     flex-direction: row;
+     flex-wrap: wrap;
+    /* justify-content: space-around;*/
+    /* align-items: center;*/
 }
 
 /*
@@ -49,8 +48,14 @@
     padding: 20px;
     color: aliceblue;
     text-align: center;
+    font-size: 55px;
     
     
+}
+
+.otro{
+    align-self: stretch;
+    height: auto;
 }
 
 

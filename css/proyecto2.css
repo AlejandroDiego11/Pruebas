@@ -1,0 +1,206 @@
+*{
+
+    /*********CON ESTA CONFIGURACION SE ACOMODO LAS 3 CAJAS PRINCIPALES*************/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+   display: flex;/******PARA QUE SEA MANIPULABLE*/
+    flex-flow: column nowrap;/*********PARA QUE SE ADAPTE SEGUN EL TAMAÑO ESTABLECIDO*************/
+
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+/*************************PRIMERA PARTE DE LA CAJITA ******************************/
+.header{
+    background:url(../img/gradiente.jpg);
+
+    /*estilos para la imagen*/
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+
+    /**FIN DE ESTILOS PARA LA IMAGEN*/
+    color: white;
+    display: flex;/*PARA QUE SEA MANIPULABLE*/
+    flex-flow: column nowrap;
+    border-bottom: 1px solid rgb(255, 255, 255,.5);
+
+}
+    .menu{
+        background-color:rgb(0,0,0,.1);
+        display: flex;/*PARA QUE SEA MANIPULABLE*/
+        flex-flow: row nowrap; /*PARA QUE SE MUESTRE EN COLUMNAS Y SE ADAPTE*/
+        height: 70px; /*PARA QUE LOS 3 HIJOS TENDGAN UNA ALTURAS MAS GRANDE (LOGO,NAV,SOCIAL)*/
+        align-items: center;
+     
+        
+    }
+        .logo {
+         
+            flex: 1 1 auto;/*PARA QUE TENGAN EL TAMÑO LAS BARRAS QUE NECESITAMOS*/  
+        }
+           .logo a {
+            color: white;
+            font-size: 30px;
+           }
+           .logo a:hover{
+            color: #343434;
+            
+           }
+        .nav{
+            flex: 5 1 auto;/*PARA QUE LA BARRA DE ENMEDIO SEA MAS GRANDE QUE LA DE IZQ Y DERE*/
+        }
+          .nav a{
+            color: white;
+            font-size: 11px;
+            text-transform: uppercase;/*HACE QUE TODO APAREZCA EN MAYUCULAS*/
+            padding: 0 10px;
+            letter-spacing: 2px;
+          }
+          .nav a:hover{
+            color: #343434;
+          }
+        .social{
+            flex: 1 1 auto;/*PARA QUE TENGAN EL TAMÑO LAS BARRAS QUE NECESITAMOS*/ 
+            display: flex;
+        }
+           .social a{
+            color: white;
+            font-size: 18px;
+            padding: 0 5px;
+           }
+           .social a:hover{
+            color:#343434 ;
+           }
+    .texto-principal{
+        height: 580px;
+        display: flex;
+        align-items: center;
+        
+    }
+        h1{
+            font-size: 21px;
+            color: #fff;
+            font-weight: 900;
+            text-align: center;
+            line-height: 1.6; /*ESPACIO ENTRE LAS LINEAS DEL TEXTO */
+        }
+
+/*************************SEGUNDA PARTE DE LA CAJITA ******************************/
+
+.section{
+    background: black;
+    color: white;
+    display: flex;/*HACE QUE TODO LO QUE ESTA DENTRO SEA MANIPULABLE*/ 
+    
+}
+    .articulos{
+        background: #BDBDBD;
+        flex: 2 1 auto;
+        display: flex;/*HACE QUE TODO LO QUE ESTA DENTRO SEA MANIPULABLE*/ 
+        flex-flow: row wrap ; /*SE AJUSTA AL ESPACIO QUE LE VAS A DAR CON WRPA SI NO CABE SE RECORRE HACIA ABAJO PARA QUE ESTE ACOMODADO*/
+        
+    }
+         
+        .article{
+            flex: 1 1 40%; /*TAMAÑO DE LOS ARTICULOS*/
+            color: #444;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            flex:  1 1 45%;
+            background: #ececec;
+    
+        }
+        .article img{
+            width: 100%;
+        }
+
+        h3{
+           /* color: #fff;*/
+            font-size: 13px;
+            color: red;
+            padding: 10px 0; /*HACIA ARRIBA Y ABAJO DE 10PX Y A LOS LADOS 0*/ 
+            margin-top: -80px;
+            margin-left: 390px;
+        }
+
+       
+        h2{
+            font-size: 25px;
+            text-transform: uppercase;/*PONER LETRASEN MAYUSCULAS*/
+            padding: 0px 0 10px 0;
+            color: #fff;
+        }
+    .navegacion{
+        background: whitesmoke;
+        color: black;
+        flex: 1 1  100%;/*TAMAÑO DE LOS ARTICULOS*/
+    }
+    .aside{
+        
+        flex: 1 1 auto;/*TAMAÑO DE LOS ARTICULOS*/
+    }
+    .aside img{
+        width: 100%;
+    }
+        .publicidad{
+            background: brown;
+        }
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+  .pie a{
+    background: #2d4059;
+    color: white;
+    width: 300px;
+    
+  }
+
+
+  @media all and (max-width:800px) { /*DE 0 A 800*/
+    .section{
+        flex-direction: column;/*HACE QUE SE ADAPTE Y SE BAJE EL ASIDE PARA QUE SE ACOMODE EN UNA TABLETA*/
+   
+    }
+
+    .menu{
+        flex-direction: column;/*HACE QUE SE ADAPTE Y SE BAJE EL ASIDE PARA QUE SE ACOMODE EN UNA TABLETA*/
+        height: auto;/*LE ASIGA AUTOMATICAMENTE LA ALTURA PARA QUE SE ACOMDE MENU,LOGO,NAV*/
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+
+  }
+
+  @media all and (max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+
+  }
+
+
+  @media all and (max-width:600px){
+
+    .aside{
+        flex-direction: column;
+    }
+
+  }

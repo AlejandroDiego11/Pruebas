@@ -1,0 +1,75 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre{
+   display: flex;
+    flex-flow: column nowrap;
+
+}
+/*************************PRIMERA PARTE DE LA CAJITA ******************************/
+.header{
+    background: #000;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+    .menu{
+        background: #2d4059;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        
+    }
+        .logo{
+            background: #ea5455;
+            flex: 1 1 auto;
+        }
+        .nav{
+            background: #ea5455;
+            flex: 5 1 auto;
+        }
+        .social{
+            background: #ea5455;
+            flex: 1 1 auto;
+        }
+    .texto-principal{
+        background: #f07b3f;
+    }
+        h1{
+            background: #ffd460;
+        }
+
+/*************************SEGUNDA PARTE DE LA CAJITA ******************************/
+
+.section{
+    background: #000;
+    color: white;
+}
+    .articulos{
+        background: skyblue;
+    }
+        .article{
+            background: red;
+        }
+    .navegacion{
+        background: whitesmoke;
+        color: black;
+    }
+    .aside{
+        background: #ffd460;
+    }
+        .publicidad{
+            background: brown;
+        }
+.footer{
+    background: #000;
+    color: white;
+}
+  .pie{
+    background: #2d4059;
+    color: white;
+  }
